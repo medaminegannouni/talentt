@@ -18,6 +18,7 @@ public class Cv {
     @NonNull
     private Integer id;
     @Lob
+    @Column(length = 10485760)
     private byte[] uploadedFile;
     private String title ;
     private String education;

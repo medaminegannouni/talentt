@@ -17,14 +17,7 @@ public class FileUploadService {
     @Autowired
     Cv_rep cvr;
 
-   /* public void uploadFile(Cv cv, MultipartFile file) throws IOException {
-      // Save the uploaded file to the Cv object
-        cv.setUploadedFile(file.getBytes());
 
-        // Save the Cv object to the database
-        cvr.save(cv);
-
-    }*/
    public void saveCv(Cv cv) {
        cvr.save(cv);
    }

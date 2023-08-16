@@ -1,5 +1,6 @@
 package tn.esprit.talentt.Entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.*;
@@ -25,6 +26,7 @@ public class Project {
     private String description;
     private String technologie;
     @OneToMany(cascade = CascadeType.ALL,mappedBy = "project")
+    @JsonIgnore
     private List<Cv> cv;
 
 }
